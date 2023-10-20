@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earphones Experience Centers - India</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: dark;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            top: 70px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .experience-center {
+            border: 1px solid #ddd;
+            flex-basis: calc(33.33% - 1rem);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background-color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .experience-center:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .experience-center h2 {
+            color: #1a4cc9;
+            margin-top: 0;
+        }
+        .experience-center p {
+            color: #000000;
+            margin: 5px 0;
+        }
+        .experience-center img {
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .experience-center a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .go-back {
+            position: absolute;
+            Right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .go-back a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Earphones Experience Centers Across India</h2>
+        <span class="go-back">
+            <a href="head.html">Go Back</a>
+        </span>
+    </header>
+    
+    <main>
+        <div class="row">
+            <div class="experience-center">
+                <h2>Mumbai</h2>
+                <img src="img/c2.jpg" height="150px" width="300px" alt="Mumbai Experience Center">
+                <p>Address: 456 Park Avenue, Mumbai</p>
+                <p>Contact: +91 9876543210</p>
+            </div>
+        
+            <div class="experience-center">
+                <h2>Chennai</h2>
+                <img src="img/c3.jpg" height="150px" width="300px" alt="Chennai Experience Center">
+                <p>Address: 122 Anna Road, Chennai</p>
+                <p>Contact: +91 7837829392</p>
+            </div>
+        
+            <div class="experience-center">
+                <h2>Delhi</h2>
+                <img src="img/c1.jpg" height="150px" width="300px" alt="Delhi Experience Center">
+                <p>Address: 123 Main Street, Delhi</p>
+                <p>Contact: +91 9875574786</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="experience-center">
+                <h2>Bangalore</h2>
+                <img src="img/c4.jpg" height="150px" width="300px" alt="Bangalore Experience Center">
+                <p>Address: 789 Lake Road, Bangalore</p>
+                <p>Contact: +91 7890123456</p>
+            </div>
+            <div class="experience-center">
+                <h2>Ahmedabad</h2>
+                <img src="img/c6.jpg" height="150px" width="300px" alt="Delhi Experience Center">
+                <p>Address: 456 Second Street, Ahmedabad</p>
+                <p>Contact: +91 8875789086</p>
+            </div>
+            <div class="experience-center">
+                <h2>Trivandrum</h2>
+                <img src="img/c5.jpg" height="150px" width="300px" alt="Trivandrum Experience Center">
+                <p>Address: 789 Back waters Road, Trivandrum</p>
+                <p>Contact: +91 8989945674</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

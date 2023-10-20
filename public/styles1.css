@@ -1,0 +1,46 @@
+body {
+  background-image: url('img/h20.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}       
+  .container {
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    right: 250px;
+    border: none;
+  }
+  .container form {
+    background-color: rgba(164, 173, 196, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+  }
+  #c{
+    color: #ffffff;
+  }
+  .container form label {
+    color: #ffffff;
+  }
+  .container form .form-control {
+    background-color: rgba(179, 180, 201, 0.8);
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .container form button {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  .container form button:hover {
+    background-color: #2a8ef3; 
+  }
+
+
+
+  

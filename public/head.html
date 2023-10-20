@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Rave</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #a{
+           font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(193, 203, 210);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Audio Rave</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index1.html">Experience center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index2.html">Details</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron jumbotron-fluid bg-secondary text-white text-center">
+    <div class="container">
+        <h1 class="display-4" id="a">Welcome to Audio Rave</h1>
+        <p class="lead">Experience the ultimate sound quality with our premium headphones.</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="img/h1.webp" class="card-img-top" alt="Headphone Model 1">
+        <div class="card-body">
+            <h5 class="card-title">Sennheiser - IE 600</h5>
+            <p class="card-text">₹ 49,990</p>
+       
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct1">
+                Buy Now
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalProduct1" tabindex="-1" role="dialog" aria-labelledby="modalProduct1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProduct1Label">Sennheiser - IE 600</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/h1.webp" class="img-fluid mb-3" alt="Headphone Model 1">
+                <p>Experience high-quality sound with the Sennheiser IE 600 headphones.</p>
+                <p>Price: ₹ 49,990</p>
+                <p>Features:</p>
+                <ul>
+                    <li>High-resolution audio</li>
+                    <li>Comfortable fit</li>
+                    <li>Noise isolation</li>
+                </ul>
+                <hr>
+                <h5>Place Your Order</h5>
+                <form action="http://localhost:8000/order" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="img/h10.webp" class="card-img-top" alt="Headphone Model 5">
+        <div class="card-body">
+            <h5 class="card-title">Moondrop - Blessing 3</h5>
+            <p class="card-text">₹ 29,990</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct10">
+                Buy Now
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalProduct10" tabindex="-1" role="dialog" aria-labelledby="modalProduct10Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProduct10Label">Moondrop - Blessing 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/h10.webp" class="img-fluid mb-3" alt="Headphone Model 5">
+                <p>Experience exceptional audio quality with the Moondrop Blessing 3 headphones.</p>
+                <p>Price: ₹ 29,990</p>
+                <p>Features:</p>
+                <ul>
+                    <li>Premium sound experience</li>
+                    <li>Comfortable fit</li>
+                    <li>High-quality materials</li>
+                </ul>
+                <hr>
+                <h5>Place Your Order</h5>
+                <form action="http://localhost:8000/order" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="img/h3.webp" class="card-img-top" alt="Headphone Model 3">
+        <div class="card-body">
+            <h5 class="card-title">Final - A8000</h5>
+            <p class="card-text">₹ 89,999</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct11">
+                Buy Now
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalProduct11" tabindex="-1" role="dialog" aria-labelledby="modalProduct11Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProduct11Label">Final - A8000</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/h3.webp" class="img-fluid mb-3" alt="Headphone Model 3">
+                <p>Experience the pinnacle of sound quality with the Final A8000 headphones.</p>
+                <p>Price: ₹ 89,999</p>
+                <p>Features:</p>
+                <ul>
+                    <li>High-resolution audio</li>
+                    <li>Premium build</li>
+                    <li>Crystal clear sound</li>
+                </ul>
+                <hr>
+                <h5>Place Your Order</h5>
+                <form action="http://localhost:8000/order" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Place Order</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h9.webp" class="card-img-top" alt="Headphone Model 4">
+                <div class="card-body">
+                    <h5 class="card-title">Campfire Audio - Andromeda 2018</h5>
+                    <p class="card-text">₹ 44,999</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct15">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+   
+        <div class="modal fade" id="modalProduct15" tabindex="-1" role="dialog" aria-labelledby="modalProduct15Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct15Label">Campfire Audio - Andromeda 2018</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h9.webp" class="img-fluid mb-3" alt="Headphone Model 4">
+                        <p>Experience exceptional sound quality with the Campfire Audio Andromeda 2018 headphones.</p>
+                        <p>Price: ₹ 44,999</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>High-resolution audio</li>
+                            <li>Handcrafted design</li>
+                            <li>Wide soundstage</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h2.webp" class="card-img-top" alt="Headphone Model 2">
+                <div class="card-body">
+                    <h5 class="card-title">64 Audio - Fourte</h5>
+                    <p class="card-text">₹ 299,999</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct16">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+  
+        <div class="modal fade" id="modalProduct16" tabindex="-1" role="dialog" aria-labelledby="modalProduct16Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct16Label">64 Audio - Fourte</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h2.webp" class="img-fluid mb-3" alt="Headphone Model 2">
+                        <p>Experience audiophile-grade sound with the 64 Audio Fourte headphones.</p>
+                        <p>Price: ₹ 299,999</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>Custom-tuned drivers</li>
+                            <li>Studio-quality sound</li>
+                            <li>Exceptional clarity</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h11.webp" class="card-img-top" alt="Headphone Model 6">
+                <div class="card-body">
+                    <h5 class="card-title">Shure - AONIC 5</h5>
+                    <p class="card-text">₹ 51,499</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct17">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+       
+        <div class="modal fade" id="modalProduct17" tabindex="-1" role="dialog" aria-labelledby="modalProduct17Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct17Label">Shure - AONIC 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h11.webp" class="img-fluid mb-3" alt="Headphone Model 6">
+                        <p>Experience precision sound with the Shure AONIC 5 headphones.</p>
+                        <p>Price: ₹ 51,499</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>Triple high-definition drivers</li>
+                            <li>Detachable cables</li>
+                            <li>Sound isolation technology</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h12.webp" class="card-img-top" alt="Headphone Model 7">
+                <div class="card-body">
+                    <h5 class="card-title">Noble Audio - Kadence</h5>
+                    <p class="card-text">₹ 124,990</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct18">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalProduct18" tabindex="-1" role="dialog" aria-labelledby="modalProduct18Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct18Label">Noble Audio - Kadence</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h12.webp" class="img-fluid mb-3" alt="Headphone Model 7">
+                        <p>Experience premium sound quality with the Noble Audio Kadence headphones.</p>
+                        <p>Price: ₹ 124,990</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>Custom balanced armature drivers</li>
+                            <li>Handcrafted design</li>
+                            <li>Detachable cable</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h13.webp" class="card-img-top" alt="Headphone Model 8">
+                <div class="card-body">
+                    <h5 class="card-title">Beyerdynamic - XELENTO Remote</h5>
+                    <p class="card-text">₹ 60,999</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct19">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalProduct19" tabindex="-1" role="dialog" aria-labelledby="modalProduct19Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct19Label">Beyerdynamic - XELENTO Remote</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h13.webp" class="img-fluid mb-3" alt="Headphone Model 8">
+                        <p>Experience outstanding sound with the Beyerdynamic XELENTO Remote headphones.</p>
+                        <p>Price: ₹ 60,999</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>High-quality Tesla drivers</li>
+                            <li>Premium build and design</li>
+                            <li>Remote control and microphone</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/h14.webp" class="card-img-top" alt="Headphone Model 9">
+                <div class="card-body">
+                    <h5 class="card-title">Campfire Audio - Solaris Stellar Horizon</h5>
+                    <p class="card-text">₹ 229,999</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProduct20">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalProduct20" tabindex="-1" role="dialog" aria-labelledby="modalProduct20Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduct20Label">Campfire Audio - Solaris Stellar Horizon</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/h14.webp" class="img-fluid mb-3" alt="Headphone Model 9">
+                        <p>Experience unmatched audio quality with the Campfire Audio Solaris Stellar Horizon headphones.</p>
+                        <p>Price: ₹ 229,999</p>
+                        <p>Features:</p>
+                        <ul>
+                            <li>Hybrid driver technology</li>
+                            <li>Stellar Horizon design</li>
+                            <li>High-resolution sound</li>
+                        </ul>
+                        <hr>
+                        <h5>Place Your Order</h5>
+                        <form action="http://localhost:8000/order" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Shipping Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Audio Rave. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
